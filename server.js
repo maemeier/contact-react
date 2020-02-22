@@ -1,7 +1,10 @@
 const express = require("express");
+const connectDB = require("./config/db");
 
 const app = express();
 
+//connect DB
+connectDB();
 // add endpoint
 app.get("/", (req, res) => res.json({ meg: "Welcome to Contact keeper API" }));
 
