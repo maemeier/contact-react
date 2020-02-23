@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://fyni:123@contact-kaat2.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://fyni:123@contact-kaat2.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
 }
