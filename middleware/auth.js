@@ -14,7 +14,7 @@ module.exports = function(req, res, next) {
       .json({ msg: "No token found, authorization denied " });
   }
   try {
-    const decoded = jwt.verify(token, config.get("jwtSecert"));
+    const decoded = jwt.verify(token, config.get("jwtSecret"));
     req.user = decoded.user;
     next();
   } catch (err) {
