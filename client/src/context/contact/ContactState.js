@@ -17,7 +17,7 @@ const ContactState = props => {
     contacts: [
       {
         id: 1,
-        name: "mae meier",
+        name: "Mae Meier",
         email: "maemeier@live.com",
         phone: "079-231-3456",
         type: "professional"
@@ -41,11 +41,11 @@ const ContactState = props => {
   // clear filter
 
   return (
-    <ContactContext.Provider>
-      value=
-      {{
+    <ContactContext.Provider
+      value={{
         contacts: state.contacts
       }}
+    >
       {props.children}
     </ContactContext.Provider>
   );
