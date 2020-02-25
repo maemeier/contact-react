@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
@@ -27,7 +26,7 @@ Navbar.propTypes = {
 };
 
 Navbar.defaultProps = {
-  titel: "contact Keeper",
+  title: "Contact Keeper",
   icon: "fas fa-id-card-alt"
 };
 export default Navbar;
