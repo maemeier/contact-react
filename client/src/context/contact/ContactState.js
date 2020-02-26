@@ -20,6 +20,20 @@ const ContactState = props => {
         name: "Mae Meier",
         email: "maemeier@live.com",
         phone: "079-231-3456",
+        type: "personal"
+      },
+      {
+        id: 2,
+        name: "Evan Meier",
+        email: "maemeier@live.com",
+        phone: "079-231-3456",
+        type: "professional"
+      },
+      {
+        id: 3,
+        name: "Nils Meier",
+        email: "maemeier@live.com",
+        phone: "079-231-3456",
         type: "professional"
       }
     ]
