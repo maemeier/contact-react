@@ -25,16 +25,16 @@ const ContactState = props => {
       },
       {
         id: 2,
-        name: "Evan Meier",
-        email: "maemeier@live.com",
-        phone: "079-231-3456",
+        name: "Peter Pan",
+        email: "disney@land.com",
+        phone: "079-231-3403",
         type: "professional"
       },
       {
         id: 3,
-        name: "Nils Meier",
-        email: "maemeier@live.com",
-        phone: "079-231-3456",
+        name: "React Native",
+        email: "react@facebook.com",
+        phone: "089-231-3456",
         type: "professional"
       }
     ],
@@ -65,6 +65,9 @@ const ContactState = props => {
   };
 
   //update contacts
+  const updateContact = contact => {
+    dispatch({ type: UPDATE_CONTACT, payload: contact });
+  };
 
   // filter contacts
 
@@ -78,7 +81,8 @@ const ContactState = props => {
         addContact,
         deleteContact,
         setCurrent,
-        clearCurrent
+        clearCurrent,
+        updateContact
       }}
     >
       {props.children}
