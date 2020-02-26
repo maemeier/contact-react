@@ -2,11 +2,20 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #003699;
-  --dark-color: #333333;
+  --primary-color: linear-gradient(
+    63deg,
+    rgba(19, 78, 94, 1) 0%,
+    rgba(113, 178, 128, 1) 95%
+  );
+
+  --dark-color: #373737;
   --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
+  --danger-color: #e65245;
+  --success-color: linear-gradient(
+    63deg,
+    rgba(62, 81, 81, 1) 45%,
+    rgba(222, 203, 164, 1) 100%
+  );
 }
 
 * {
