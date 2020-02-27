@@ -45,16 +45,16 @@ const Register = () => {
             onChange={onChange}
           />
         </div>
-
         <div className="form-group">
-          <label htmlFor="password2"> Confirm password </label>
+          <label htmlFor="password2"> Confirm Password </label>
           <input
-            type="password2"
+            type="password"
             name="password2"
             value={password2}
             onChange={onChange}
           />
         </div>
+
         <input
           type="submit"
           value="Register"
