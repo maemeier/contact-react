@@ -1,9 +1,10 @@
-import React, { userContext, useRef, useEffect } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import ContactContext from "../../context/contact/contactContext";
 
 const ContactFilter = () => {
-  const contactContext = userContext(ContactContext);
+  const contactContext = useContext(ContactContext);
   const text = useRef("");
+
   const { filterContacts, clearFilter, filtered } = contactContext;
 
   useEffect(() => {
@@ -19,17 +20,16 @@ const ContactFilter = () => {
       clearFilter();
     }
   };
+
   return (
-    <>
-      <form>
-        <input
-          ref={text}
-          type="text"
-          placeholder="Filter contacts..."
-          onChange={onChange}
-        />
-      </form>
-    </>
+    <form>
+      <input
+        ref={text}
+        type="text"
+        placeholder="Filter Contacts..."
+        onChange={onChange}
+      />
+    </form>
   );
 };
 
