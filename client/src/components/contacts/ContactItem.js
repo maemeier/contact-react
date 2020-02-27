@@ -33,7 +33,7 @@ const ContactItem = ({ contact }) => {
         )}
         {phone && (
           <li>
-            <i className="fas fa-phone"></i> {phone}
+            <i className="fas fa-phone-square-alt"></i> {phone}
           </li>
         )}
       </ul>
