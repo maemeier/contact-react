@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import AuthContext from "./AuthContext";
 import authReducer from "./authReducer";
 
@@ -31,15 +31,15 @@ const AuthState = props => {
   // clear error
 
   return (
-    <AuthContext.Provider>
-      value=
-      {{
+    <AuthContext.Provider
+      value={{
         token: state.token,
         isAuthenticated: state.isAuthenticated,
-        token: state.loading,
+        loading: state.loading,
         user: state.user,
         error: state.error
       }}
+    >
       {props.children}
     </AuthContext.Provider>
   );
