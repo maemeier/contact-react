@@ -18,22 +18,22 @@ const ContactState = props => {
     contacts: [
       {
         id: 1,
-        name: "Mae Meier",
+        name: "Mae Kangsadan",
         email: "maemeier@live.com",
         phone: "079-231-3456",
         type: "personal"
       },
       {
         id: 2,
-        name: "Peter Pan",
+        name: "Nemo Wonderland",
         email: "disney@land.com",
         phone: "079-231-3403",
         type: "professional"
       },
       {
         id: 3,
-        name: "React Native",
-        email: "react@facebook.com",
+        name: "Jon Snow",
+        email: "kinglanding@dragonball.com",
         phone: "089-231-3456",
         type: "professional"
       }

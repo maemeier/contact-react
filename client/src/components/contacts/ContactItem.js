@@ -5,7 +5,7 @@ import ContactContext from "../../context/contact/contactContext";
 const ContactItem = ({ contact }) => {
   const contactContext = useContext(ContactContext);
   const { deleteContact, setCurrent, clearCurrent } = contactContext;
-  const { name, id, phone, email, type } = contact;
+  const { name, id, phone, email, type, job } = contact;
 
   const onDelete = () => {
     deleteContact(id);
@@ -28,9 +28,10 @@ const ContactItem = ({ contact }) => {
       <ul className="list">
         {email && (
           <li>
-            <i className="fas fa-envelop-open"></i> {email}
+            <i className="fas fa-letter"></i>Email: {email}
           </li>
         )}
+        {job && <li>Job Title: {job}</li>}
         {phone && (
           <li>
             <i className="fas fa-phone-square-alt"></i> {phone}
