@@ -7,6 +7,7 @@ import ContactState from "./context/contact/ContactState";
 import AuthState from "./context/auth/AuthState";
 import AlertState from "./context/alert/AlertState";
 import Alerts from "./components/layout/Alerts";
+import Private from "./components/routing/private";
 
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
