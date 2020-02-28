@@ -51,6 +51,14 @@ const Register = props => {
   };
   return (
     <div className="form-container">
+      <i
+        className="fas fa-user-circle"
+        style={{
+          fontSize: "40px",
+          justifyContent: "center",
+          display: "flex"
+        }}
+      ></i>
       <h1>
         Account <span className="text-primary">Register</span>{" "}
       </h1>
